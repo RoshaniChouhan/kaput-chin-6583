@@ -1,0 +1,72 @@
+;
+import {
+  Box,
+  Heading,
+  Container,
+  Text,
+  Button,
+  Stack,
+  Icon,
+  useColorModeValue,
+  createIcon,
+} from '@chakra-ui/react';
+
+export default function CallToActionWithAnnotation() {
+  return (
+    <>
+  
+
+      <Container maxW={'3xl'}>
+        <Stack
+          as={Box}
+          textAlign={'center'}
+          spacing={{ base: 8, md: 14 }}
+          py={{ base: 20, md: 36 }}>
+          <Heading
+            fontWeight={600}
+            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
+            lineHeight={'110%'}>
+         300,000+ innovative companies use Airtable <br />
+            <Text as={'span'} color={'black.400'}>
+            every day. Join them.
+            </Text>
+          </Heading>
+     
+          <Stack
+            direction={'column'}
+            spacing={3}
+            align={'center'}
+            alignSelf={'center'}
+            position={'relative'}>
+            <Button
+              colorScheme={'green'}
+              bg={'blue.400'}
+          
+              px={6}
+              _hover={{
+                bg: 'green.500',
+              }}>
+            Signup For Free
+            </Button>
+            <Button variant={'link'} colorScheme={'black'} size={'120'}>
+            No credit card needed
+            </Button>
+            <Box>
+             
+              <Text
+                fontSize={'lg'}
+                fontFamily={'Caveat'}
+                position={'absolute'}
+                right={'-125px'}
+                top={'-15px'}
+           >
+               
+              </Text>
+            </Box>
+          </Stack>
+        </Stack>
+      </Container>
+    </>
+  );
+}
+
